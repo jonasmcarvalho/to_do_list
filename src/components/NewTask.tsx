@@ -14,7 +14,12 @@ export function NewTask() {
                 <button 
                     type="submit"
                 >
-                    Criar
+                    <div>
+                        Criar
+                    </div>
+                    <div>
+                        +
+                    </div>
                 </button>
 
             </form>
