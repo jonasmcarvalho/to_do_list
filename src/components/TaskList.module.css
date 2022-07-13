@@ -1,3 +1,40 @@
-.taskList {
+.headerTaskList {
     font-family: 'Inter';
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.headerInfos {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 46rem;
+    height: 1.1875rem;
+}
+
+.createdInfo {
+    justify-content: space-between;
+    display: flex;
+    width: 8.6875rem;
+    height: 1.1875rem;
+    font-weight: bold;
+    color: var(--blue-600);
+}
+
+.completedInfo {
+    justify-content: space-between;
+    display: flex;
+    width: 6.9375rem;
+    height: 1.1875rem;
+    font-weight: bold;
+    color: var(--purple-600);
+}
+
+.taskList {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
 }
