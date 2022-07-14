@@ -1,30 +1,38 @@
 import styles from './TaskList.module.css'
+import clipboardLogo from '../assets/clipboard.svg'
 
 export function TaskList() {
     return (
         <article className={styles.headerTaskList}>
             <header className={styles.headerInfos}>
-                <span className={styles.createdInfo}>
-                    <span>
+                <span className={styles.createdInfos}>
+                    <span className={styles.createdContent}>
                         Tarefas criadas
                     </span>
-                    <span>
-                        0
+                    <span className={styles.createdCounter}>
+                        <p>
+                            0
+                        </p>
                     </span>
                 </span>
                 <span className={styles.completedInfo}>
-                    <span>
+                    <span className={styles.completeContent}>
                         Concluídas
                     </span>
-                    <span>
-                        0
+                    <span className={styles.completedCounter}>
+                        <p>
+                            0
+                        </p>
                     </span>
                 </span>
             </header>
-            
+
             <div className={styles.taskList}>
-                <p>Você ainda não tem tarefas cadastradas</p>
-                <p>Crie tarefas e organize seus itens a fazer</p>
+                <img src={clipboardLogo} alt="" />
+                <strong>
+                Você ainda não tem tarefas cadastradas <br />
+                </strong>
+                Crie tarefas e organize seus itens a fazer
             </div>
         </article>
     )
