@@ -9,8 +9,12 @@ export function App() {
   return (
     <div>
       <Header />
-      <NewTask />
-      <TaskList />
+      <div>
+        <NewTask />
+        <main>
+          <TaskList />
+        </main>
+      </div>
     </div>
   )
 }

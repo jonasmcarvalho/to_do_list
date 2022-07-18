@@ -1,5 +1,7 @@
 import styles from './TaskList.module.css'
 import clipboardLogo from '../assets/clipboard.svg'
+import { NewTask } from './NewTask'
+import { Task } from './Task'
 
 export function TaskList() {
     return (
@@ -26,13 +28,19 @@ export function TaskList() {
                     </span>
                 </span>
             </header>
-
+            
             <div className={styles.taskList}>
-                <img src={clipboardLogo} alt="" />
-                <strong>
-                Você ainda não tem tarefas cadastradas <br />
-                </strong>
-                Crie tarefas e organize seus itens a fazer
+
+                    <Task />
+                
+                    <img src={clipboardLogo} alt=""/>
+                    <strong>
+                        Você ainda não tem tarefas cadastradas
+                    </strong>
+                    <p>
+                        Crie tarefas e organize seus itens a fazer
+                    </p>
+                
             </div>
         </article>
     )
