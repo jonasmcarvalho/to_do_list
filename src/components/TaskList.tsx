@@ -29,9 +29,27 @@ export function TaskList() {
                 </span>
             </header>
             
-            <div className={styles.taskList}>
+            <div className={styles.taskListNotEmpty}>
 
                     <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    <Task />
+                    
                 
                     <img src={clipboardLogo} alt=""/>
                     <strong>

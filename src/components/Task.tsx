@@ -1,12 +1,12 @@
 import styles from './Task.module.css'
-import { CheckCircle, Circle } from 'phosphor-react'
+import { CheckCircle, Circle, Trash } from 'phosphor-react'
 
 export function Task() {
     return (
         <div className={styles.taskFull}>
             <div className={styles.checkButton}>
                 <button className={styles.selectButton}>
-                    <Circle  />
+                    <Circle size={24} className={styles.circle} />
                 </button>
             </div>
 
@@ -16,8 +16,10 @@ export function Task() {
                 </p>
             </span>
 
-            <div>
-                <p>T</p>
+            <div className={styles.trashIcon}>
+                <button>
+                    <Trash size={24} />
+                </button>
             </div>
         </div>
     )

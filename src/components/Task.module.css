@@ -1,5 +1,6 @@
 .taskFull {
     box-sizing: border-box;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 1rem;
@@ -29,28 +30,14 @@
     flex-grow: 0;
 }
 
-.checkButton span {
-    position: absolute;
-    left: 13.64%;
-    right: 13.64%;
-    top: 13.64%;
-    bottom: 13.64%;
-}
-
 .selectButton {
-
-    /* position: absolute;
-    left: 13.64%;
-    right: 13.64%;
-    top: 13.64%;
-    bottom: 13.64%; */
 
     background: transparent;
     border: 0;
     color: var(--gray-400);
     cursor: pointer;
     line-height: 0;
-    border-radius: 2px;
+    border-radius: 8px;
 
     width: 1.090625rem;
     height: 1.090625rem;
@@ -60,4 +47,27 @@
     color: var(--blue-600);
 
     /* background: var(--blue-600); */
+}
+
+.trashIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border-radius: 4px;    
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.trashIcon button {
+    background: transparent;
+    border: 0;
+
+    left: 25%;
+    right: 23.01%;
+    top: 20.83%;
+    bottom: 20.83%;
+
+    color: var(--gray-650);
 }
